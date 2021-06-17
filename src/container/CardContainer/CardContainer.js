@@ -14,11 +14,11 @@ const CardContainer = ({ classes }) => {
 
     const validationSchema = yup.object({
         firstName: yup.string('Enter your first name').required('First Name is required').matches(/^[a-zA-Z]+$/, 'Enter a valid name'),
-        lastName: yup.string('Enter your last name').required('Last name is required').matches(/[a-zA-Z]/, 'Enter a valid name'),
+        lastName: yup.string('Enter your last name').required('Last name is required').matches(/^[a-zA-Z]+$/, 'Enter a valid name'),
         email: yup.string('Enter valid email').email('enter valid format').required('Required'),
         age: yup.number('Enter valid age').required('Required')
-      });
-      
+    });
+
     const formik = useFormik(({
         initialValues: {
             firstName: '',
@@ -33,7 +33,7 @@ const CardContainer = ({ classes }) => {
         }
     }));
     return (
-        <Grid className={classes.GridStyle} item lg={4} xs ={11} >
+        <Grid className={classes.GridStyle} item lg={4} xs={11} >
             <Card className={classes.CardStyle}>
                 <AvatarComponent />
                 {/* <Header /> */}

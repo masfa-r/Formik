@@ -17,7 +17,7 @@ const styles = ({
     },
     '@media (max-width: 400px)': {
         CardStyle: {
-            marginTop: '-140px',
+            marginTop: '30px',
         }
        }
 });

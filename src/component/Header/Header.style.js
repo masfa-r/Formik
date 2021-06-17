@@ -15,9 +15,7 @@ const styles = ({
     },
     '@media (max-width: 400px)': {
      HeaderStyle: {
-       paddingTop:'30px',
-       fontSize:'25px',
-       fontSize: '28px'
+       display: 'none'
      }
     }
 });
