@@ -15,7 +15,7 @@ const styles = ({
         borderRadius: "8px",
         position: 'sticky'
     },
-    '@media (max-width: 400px)': {
+    '@media (max-width: 500px)': {
         CardStyle: {
             marginTop: '30px',
         }
